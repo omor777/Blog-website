@@ -213,8 +213,7 @@ h6 {
 }
 
 .how-to-content {
-  background: var(--white);
-  height: 360px;
+  background-color: rgb(222, 249, 249);
   width: 920px;
   border-radius: 1.6rem;
   position: absolute;
@@ -270,3 +269,168 @@ h6 {
 }
 
 /* how to section end here */
+
+/* recent post section start here */
+#recent-post {
+  margin-top: calc(8.7rem + 112px);
+
+  & .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+
+    & h3 {
+      font-size: var(--font-48);
+      font-weight: 700;
+      line-height: 5rem;
+      letter-spacing: -0.88px;
+      color: var(--gray-300);
+    }
+    & button {
+      background-color: var(--purple);
+      color: var(--white);
+      text-align: center;
+      font-family: var(--roboto);
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.recent-post-div {
+  display: flex;
+  gap: 5.6rem;
+
+  & .img {
+    width: 712px;
+    & img {
+      width: 712px;
+      height: 456px;
+      flex-shrink: 0;
+    }
+  }
+
+  .recent-content {
+    & div:first-child {
+      gap: 0.8rem;
+
+      & h6 {
+        color: var(--gray-300);
+        font-family: var(--roboto);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 1.3rem;
+      }
+      & p {
+        color: #999;
+        font-family: var(--roboto);
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+  & h4 {
+    color: #333;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -1px;
+    margin-top: 2.7rem;
+  }
+  & p {
+    color: #666;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 464px;
+    margin-top: 1.3rem;
+  }
+  & button {
+    color: #7c4ee4;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: var(--white);
+    border: 1px solid var(--purple);
+    margin-top: 8.1rem;
+  }
+}
+
+.our-post {
+  margin-top: 6.3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.post {
+  .post-img img {
+    width: 400px;
+    height: 360px;
+  }
+
+  & .post-content {
+    & .head {
+      gap: 1rem;
+      & > h6 {
+        color: #333;
+        font-family: var(--roboto);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      & > p {
+        color: #999;
+        font-family: var(--roboto);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+
+      & + h4 {
+        color: #333;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: var(--raleway);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 31.992px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.post-content .text {
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 1.6rem;
+}
+
+.read-more {
+  color: #7c4ee4;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-decoration-line: underline;
+  margin-top: 1.9rem;
+}
+/* recent post section end here */
