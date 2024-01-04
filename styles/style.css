@@ -33,6 +33,16 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
+  font-family: var(--roboto);
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--raleway);
 }
 /* ! Buttons component */
 .btn {
@@ -55,13 +65,32 @@ body {
   text-transform: capitalize;
 }
 
-/* ! utility classes */
+/* ! utility classes start here */
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1232px;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.center {
+  display: grid;
+  place-items: center;
+}
+
+/* ! utility classes end here */
 
 /* navbar */
 .navbar {
@@ -116,3 +145,56 @@ body {
 .navbar-link a:hover {
   color: var(--purple);
 }
+
+/* hero section start here */
+.hero {
+  /* height: 796px; */
+  background: var(--purple);
+  padding: 8rem;
+  gap: 4.8rem;
+  border: 1px solid red;
+}
+.hero-left {
+  & h4 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    letter-spacing: 1.6px;
+    margin-bottom: 3.7rem;
+  }
+  & h1 {
+    width: 580px;
+    color: var(--white);
+    font-family: var(--raleway);
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 8.6rem;
+    margin-bottom: 2.8rem;
+  }
+  & p {
+    color: var(--white);
+    width: 416px;
+    font-size: 1.6rem;
+    margin-bottom: 6.4rem;
+  }
+  & button {
+    color: #373737;
+    text-align: center;
+    font-family: var(--raleway);
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--white);
+  }
+}
+
+.hero-right {
+  width: 608px;
+  height: 576px;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* hero section end here */
