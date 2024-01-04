@@ -148,11 +148,11 @@ h6 {
 
 /* hero section start here */
 .hero {
-  /* height: 796px; */
+  width: 1440px;
+  margin: 0 auto;
   background: var(--purple);
   padding: 8rem;
   gap: 4.8rem;
-  border: 1px solid red;
 }
 .hero-left {
   & h4 {
@@ -198,3 +198,75 @@ h6 {
   }
 }
 /* hero section end here */
+
+/* how to section start here */
+.how-to-section {
+  background-image: url("../images/how-to.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 576px;
+  border-radius: 1.6rem;
+  width: 1232px;
+  position: relative;
+  margin-top: 13.1rem;
+}
+
+.how-to-content {
+  background: var(--white);
+  height: 360px;
+  width: 920px;
+  border-radius: 1.6rem;
+  position: absolute;
+  right: 0;
+  bottom: -112px;
+  margin: 0 auto;
+  padding: 3.2rem;
+
+  & :first-child {
+    display: flex;
+    align-items: center;
+
+    & h3 {
+      color: var(--gray-300);
+      font-family: var(--roboto);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 0.8rem;
+    }
+    & p {
+      color: var(--gray-100);
+      font-family: var(--roboto);
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  & h4 {
+    color: var(--gray-300);
+    font-family: var(--raleway);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    letter-spacing: -1px;
+    margin-top: 2.5rem;
+  }
+  & > p {
+    color: var(--gray-200);
+    font-family: var(--roboto);
+    font-size: 1.6rem;
+    margin-top: 7px;
+  }
+  & > button {
+    background: var(--white);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 4.7rem;
+  }
+}
+
+/* how to section end here */
